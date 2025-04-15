@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1744755792">
+ <Layer Name="Main" FullName="Main" GUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1744759311">
   <LayerObjects>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="07df5d85-254e-0982-f147-4320c3fd44c6" Name="Dude" Pos="255.99266,257.37241,34.296745" Rotate="1,0,0,-3.7612753e-09" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
@@ -75,6 +75,14 @@
        </scale>
       </Transform>
       <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="1a4880de-3a76-f0aa-e169-402e9c9c74fa" Name="RoadManager" Pos="252.39334,256.85861,31.999756" Rotate="0.70710683,0,0,-0.70710683" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="f9b9ee21-794b-4b73-884c-a7fc8f3cff32" TypeName="CRoadManagerComponent" GUID="6e03b930-94f6-4fbb-4817-039af252cd56" Name="" UserAdded="true">
+      <properties />
      </Component>
     </Components>
    </Object>

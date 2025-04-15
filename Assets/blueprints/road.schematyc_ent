@@ -1,0 +1,190 @@
+<CrySchematyc CryXmlVersion="2" version="105" guid="d7ba70c8-d90e-42ef-821e-137f9d14544e" scope="">
+ <root elementType="Class" guid="26e1b151-ac68-44b2-a184-2678f4be57a3" name="road" Schematyc::EMPEnv="clientserver">
+  <userDocumentation author="Juan" description=""/>
+  <extensions />
+  <children>
+   <element elementType="Constructor" guid="29ebd1c1-e9e2-41b8-93d4-d8d8dba85f78" name="ConstructionGraph" Schematyc::EMPEnv="clientserver">
+    <userDocumentation author="Juan" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="a526e0a1-7117-41de-bbd2-dde90d8f6385" typeGUID="12bdfa06-ba95-4e48-bb2d-bb48a7080abc">
+        <value guid="a526e0a1-7117-41de-bbd2-dde90d8f6385">
+         <pos x="0" y="0"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="SignalReceiver" guid="323b4d34-1d5d-45c6-aaa5-c3dcc8f02e25" name="SignalGraph" Schematyc::EMPEnv="clientserver" type="Universal" signalGUID="">
+    <userDocumentation author="Juan" description=""/>
+    <extensions>
+     <Graph>
+      <pos x="0" y="0"/>
+      <nodes>
+       <element key="fefb93e5-2420-477a-acf7-6e9445ac7fe6" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="fefb93e5-2420-477a-acf7-6e9445ac7fe6" objectGUID="">
+         <pos x="0" y="100"/>
+         <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
+        </value>
+       </element>
+       <element key="91e905dc-4495-4a07-bf18-e6c537ee02e0" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="91e905dc-4495-4a07-bf18-e6c537ee02e0" objectGUID="">
+         <pos x="0" y="200"/>
+         <signalId domain="Env" guid="b2561caa-0753-458b-a91f-e8e38b0f0cdf"/>
+        </value>
+       </element>
+       <element key="7457c771-4603-4b4b-8949-fe3f653136a3" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
+        <value guid="7457c771-4603-4b4b-8949-fe3f653136a3" objectGUID="">
+         <pos x="0" y="0"/>
+         <signalId domain="Env" guid="a9279137-7c66-491d-b9a0-8752c24c8979"/>
+        </value>
+       </element>
+      </nodes>
+      <links />
+     </Graph>
+    </extensions>
+    <children />
+   </element>
+   <element elementType="Base" guid="85c3ca8d-a93c-41de-a093-d0916996ab6d" name="Base [Entity]" Schematyc::EMPEnv="clientserver">
+    <classId domain="Env" guid="be845278-0dd2-409f-b8be-97895607c256"/>
+    <envClassProperties icon="%EDITOR%/objecticons/schematyc.bmp" bHideInEditor="false" bTriggerAreas="true" bCreatePerClient="false"/>
+    <extensions />
+    <children>
+     <element elementType="ComponentInstance" guid="5ba9a8e3-0ebc-4cb9-8c44-94666f939d78" name="Entity" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="e88093df-904f-4c52-af38-911e26777cdc">
+      <properties />
+      <extensions />
+      <children />
+     </element>
+    </children>
+   </element>
+   <element elementType="ComponentInstance" guid="191172f1-2c2a-40af-af97-83a4914d74c1" name="side_left" Schematyc::EMPEnv="client" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="0"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="10"/>
+      <element element="10"/>
+      <element element="10"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%engine%/engineassets/objects/primitive_plane.cgf" Material="blueprints/materials/blue.mtl">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="76f07df7-5ffe-48d1-842c-6653bbde19ce" name="side_right" Schematyc::EMPEnv="client" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="30"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="10"/>
+      <element element="10"/>
+      <element element="10"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%engine%/engineassets/objects/primitive_plane.cgf" Material="blueprints/materials/green.mtl">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="2f3c1d26-6a95-4373-b6f2-68c60e2e25ae" name="road_left" Schematyc::EMPEnv="client" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="20"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="10"/>
+      <element element="10"/>
+      <element element="10"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%engine%/engineassets/objects/primitive_plane.cgf" Material="blueprints/materials/red.mtl">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="87db2fbe-a44c-43af-92a4-c59ad69077c3" name="road_right" Schematyc::EMPEnv="client" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="10"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="10"/>
+      <element element="10"/>
+      <element element="10"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%engine%/engineassets/objects/primitive_plane.cgf" Material="blueprints/materials/yellow.mtl">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="8d2987a2-166c-4d41-b004-7514c2cc8f8f" name="Rigidbody" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6">
+    <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Static" SendCollisionSignal="false">
+     <Buoyancy Damping="0" Density="1000" Resistance="1000"/>
+     <Simulation MaxTimeStep="0.02" SleepSpeed="0.039999999" Damping="0"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="8a5c3d99-486b-4a35-9b32-ccb5ebc485e2" name="Box Collider" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="52431c11-77ee-410a-a7a7-a7fa69e79685">
+    <transform>
+     <translation>
+      <position>
+       <element element="15"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="1"/>
+      <element element="1"/>
+      <element element="1"/>
+     </scale>
+    </transform>
+    <properties Surface="" ReactToCollisions="true">
+     <Size x="20" y="5" z="0.1"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+  </children>
+ </root>
+</CrySchematyc>
