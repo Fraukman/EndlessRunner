@@ -32,13 +32,18 @@ protected:
 	void HandleInput();
 
 	void updatePlayerPos(float frametime);
+	void handleLateralMoviment(float frametime);
 
 private:
 	Cry::DefaultComponents::CCharacterControllerComponent* m_pCharacterControllerComponent;
 	Cry::DefaultComponents::CInputComponent* m_pInputComponent = nullptr;
 
 	float m_movementSpeed = 10;
+	float m_startXPos = 0.0f;
+	bool m_lateralMoving = false;
 	Vec2 m_movementDelta = ZERO;
 	Vec3 m_velocity = ZERO;
+	Vec3 m_startPos = ZERO;
+	Vec3 m_movementStep = ZERO;
 	
 };
