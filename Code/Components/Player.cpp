@@ -60,7 +60,7 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 void CPlayerComponent::updatePlayerPos(float frametime)
 {
 	if(m_pCharacterControllerComponent->IsOnGround()){
-		m_movementDelta.x = 1.0f;
+		m_movementDelta.y = 1.0f;
 	}
 	Vec3 normalizedVel = m_movementDelta.Normalize() * m_movementSpeed;
 	m_pCharacterControllerComponent->AddVelocity(normalizedVel * frametime);
@@ -71,14 +71,14 @@ void CPlayerComponent::updatePlayerPos(float frametime)
 void CPlayerComponent::HandleInput()
 {
 	m_pInputComponent->RegisterAction("player", "moveleft", [this](int activationMode, float value) { 
-			m_movementDelta.y = value;
+			m_movementDelta.x = -value;
 		});
 	m_pInputComponent->BindAction("player", "moveleft", eAID_KeyboardMouse, EKeyId::eKI_A);
 	m_pInputComponent->BindAction("player", "moveleft", eAID_XboxPad, eKI_XI_DPadLeft);
 
 
 	m_pInputComponent->RegisterAction("player", "moveright", [this](int activationMode, float value) { 
-		m_movementDelta.y = -value;
+		m_movementDelta.x = value;
 		});
 	m_pInputComponent->BindAction("player", "moveright", eAID_KeyboardMouse, EKeyId::eKI_D);
 	m_pInputComponent->BindAction("player", "moveright", eAID_XboxPad, eKI_XI_DPadRight);

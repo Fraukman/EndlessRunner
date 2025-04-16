@@ -1,7 +1,7 @@
 <ObjectLayer>
- <Layer Name="Main" FullName="Main" GUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1744758505">
+ <Layer Name="Main" FullName="Main" GUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1744766625">
   <LayerObjects>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="07df5d85-254e-0982-f147-4320c3fd44c6" Name="Dude" Pos="255.99266,257.37241,34.296745" Rotate="1,0,0,-3.7612753e-09" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="07df5d85-254e-0982-f147-4320c3fd44c6" Name="Dude" Pos="297.00693,236.21825,34.296745" Rotate="0.70942473,0,0,0.70478123" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="7a26dbb5-e5d6-7812-67a1-d7252ca1d197" Name="" UserAdded="true">
@@ -10,7 +10,7 @@
         <position>
          <element element="0"/>
          <element element="0"/>
-         <element element="0"/>
+         <element element="0.5"/>
         </position>
        </translation>
        <rotation x="0" y="-0" z="0"/>
@@ -55,7 +55,7 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="04bfcca2-e651-c88f-4c3e-6a3fce124c28" Name="Camera" LinkedTo="07df5d85-254e-0982-f147-4320c3fd44c6" Pos="-7.5570374,0.055511475,1.518856" Rotate="0.69985378,-0.10005443,0.10009323,-0.70012516" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="04bfcca2-e651-c88f-4c3e-6a3fce124c28" Name="Camera" Pos="296.90164,228.66176,35.815601" Rotate="0.9899286,-0.14152491,0.00049226574,-0.0034433582" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="6e59afe5-f5af-b723-08dd-e68eb0d9cd26" Name="" UserAdded="true">
@@ -78,15 +78,20 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="eb85db32-8483-c009-a953-5dfe0496e80d" Name="blueprints::road-1" Pos="254.37851,267.19171,31.999763" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="schematyc::blueprints::road" ClassGUID="26e1b151-ac68-44b2-a184-2678f4be57a3" HasEntity="1">
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="1a4880de-3a76-f0aa-e169-402e9c9c74fa" Name="RoadManager" Pos="288.4946,232.61557,31.999756" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="f9b9ee21-794b-4b73-884c-a7fc8f3cff32" TypeName="CRoadManagerComponent" GUID="e4b0ba46-11ad-f367-91f9-11e31895fdad" Name="" UserAdded="true">
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="616967fc-376c-68d6-bf77-cf5547b13c38" Name="road-5" Pos="234.47015,256.82599,32.06612" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="schematyc::blueprints::road" ClassGUID="26e1b151-ac68-44b2-a184-2678f4be57a3" HasEntity="1">
     <Properties />
     <SchematycProperties CryXmlVersion="2">
      <components />
      <variables />
     </SchematycProperties>
-   </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="fb7bdb96-cbff-1809-e81c-aeaac0402970" Id="1a4880de-3a76-f0aa-e169-402e9c9c74fa" Name="RoadManager" Pos="255.10373,251.07152,31.999756" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
    </Object>
   </LayerObjects>
  </Layer>

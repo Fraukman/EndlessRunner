@@ -66,8 +66,8 @@
     <transform>
      <translation>
       <position>
-       <element element="0"/>
-       <element element="0"/>
+       <element element="5"/>
+       <element element="5"/>
        <element element="0"/>
       </position>
      </translation>
@@ -89,8 +89,8 @@
     <transform>
      <translation>
       <position>
-       <element element="30"/>
-       <element element="0"/>
+       <element element="35"/>
+       <element element="5"/>
        <element element="0"/>
       </position>
      </translation>
@@ -112,8 +112,8 @@
     <transform>
      <translation>
       <position>
-       <element element="20"/>
-       <element element="0"/>
+       <element element="25"/>
+       <element element="5"/>
        <element element="0"/>
       </position>
      </translation>
@@ -135,8 +135,8 @@
     <transform>
      <translation>
       <position>
-       <element element="10"/>
-       <element element="0"/>
+       <element element="15"/>
+       <element element="5"/>
        <element element="0"/>
       </position>
      </translation>
@@ -166,8 +166,8 @@
     <transform>
      <translation>
       <position>
-       <element element="15"/>
-       <element element="0"/>
+       <element element="20"/>
+       <element element="5"/>
        <element element="0"/>
       </position>
      </translation>
@@ -181,6 +181,37 @@
     <properties Surface="" ReactToCollisions="true">
      <Size x="20" y="5" z="0.1"/>
      <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="f01f2fd3-ac62-481f-a200-90137fb7ecbf" name="origin" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29">
+    <transform>
+     <translation>
+      <position>
+       <element element="0"/>
+       <element element="0"/>
+       <element element="0"/>
+      </position>
+     </translation>
+     <rotation x="0" y="-0" z="0"/>
+     <scale>
+      <element element="1"/>
+      <element element="1"/>
+      <element element="1"/>
+     </scale>
+    </transform>
+    <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="blueprints/materials/red.mtl">
+     <Render ShadowSpec="Low" IgnoreVisArea="false" IgnoreTerrainLayerBlend="false" IgnoreDecalBlend="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+     <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+    </properties>
+    <extensions />
+    <children />
+   </element>
+   <element elementType="ComponentInstance" guid="fe2d15f8-d79b-489c-b0a2-6cf80d5288e1" name="CTriggerRoadComponent" Schematyc::EMPEnv="client" accessor="Public" typeGUID="0723512d-2b34-4e3f-990b-693d67b70851">
+    <properties>
+     <enemytriggersize x="40" y="4.5999999" z="6"/>
+     <enemytriggerposition x="20" y="13" z="1"/>
     </properties>
     <extensions />
     <children />

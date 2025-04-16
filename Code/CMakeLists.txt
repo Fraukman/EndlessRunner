@@ -29,6 +29,8 @@ add_sources("Components_uber.cpp"
 		"Components/Player.h"
 		"Components/RoadManager.h"
 		"Components/RoadManager.cpp"
+		"Components/TriggerRoad.h"
+		"Components/TriggerRoad.cpp"
 )
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/CVarOverrides.h")

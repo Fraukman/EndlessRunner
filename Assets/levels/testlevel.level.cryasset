@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Level" guid="fa3938fe-600d-53da-fa6b-bbe3e6745520" source="" timestamp="1744759312">
+<AssetMetadata version="0" type="Level" guid="fa3938fe-600d-53da-fa6b-bbe3e6745520" source="" timestamp="1744767110">
  <Files>
   <File path="testlevel/testlevel.level"/>
  </Files>
@@ -21,15 +21,12 @@
   <Path>%engine%/engineassets/objects/primitive_plane.cgf</Path>
   <Path>%engine%/engineassets/objects/primitive_sphere.cgf</Path>
   <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
-  <Path>%engine%/engineassets/textures/default_probe_cm.dds</Path>
-  <Path>%engine%/engineassets/textures/default_probe_cm_diff.dds</Path>
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
   <Path>blueprints/materials/blue.mtl</Path>
   <Path>blueprints/materials/green.mtl</Path>
   <Path>blueprints/materials/red.mtl</Path>
   <Path>blueprints/materials/yellow.mtl</Path>
-  <Path>blueprints/road.schematyc_ent</Path>
   <Path>scripts/ai/factions.xml</Path>
  </Dependencies>
 </AssetMetadata>

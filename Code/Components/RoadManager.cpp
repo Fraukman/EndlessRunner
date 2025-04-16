@@ -39,9 +39,9 @@ void CRoadManagerComponent::ProcessEvent(const SEntityEvent& event)
 	{
 	case Cry::Entity::EEvent::GameplayStarted:
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 6; i++)
 		{
-			spawnRoad(Vec3(i * 10.0f,0.0f,0.0f));
+			spawnRoad();			
 		}
 	}
 	break;
@@ -52,14 +52,16 @@ void CRoadManagerComponent::ProcessEvent(const SEntityEvent& event)
 	break;
 	case Cry::Entity::EEvent::Reset:
 	{
-		
+		lastIndex = -1;
 	}
 	break;	
 	}
 }
 
-void CRoadManagerComponent::spawnRoad(Vec3 position)
+void CRoadManagerComponent::spawnRoad()
 {
+	Vec3 newPos = Vec3(0.0f, lastIndex * 10.0f, 0.0f);
+
 	SEntitySpawnParams spawnParams;
 	std::string enemySh = "schematyc::blueprints::road";
 	spawnParams.pClass = gEnv->pEntitySystem->GetClassRegistry()->FindClass(enemySh.c_str());
@@ -68,9 +70,11 @@ void CRoadManagerComponent::spawnRoad(Vec3 position)
 	{
 		Matrix34 etm = m_pEntity->GetWorldTM();
 
-		etm.AddTranslation(position);
+		etm.AddTranslation(newPos);
 
 		pEntity->SetWorldTM(etm);
 	}
+
+	lastIndex++;
 }
 

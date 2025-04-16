@@ -29,10 +29,10 @@ public:
 	}	
 	
 
-	void spawnRoad(Vec3 position);
+	void spawnRoad();
 protected:	
 
 private:
-	
+	int lastIndex = -1;
 	
 };
