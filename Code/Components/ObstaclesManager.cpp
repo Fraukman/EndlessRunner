@@ -25,10 +25,10 @@ namespace
 
 void CObstaclesManagerComponent::Initialize()
 {
-	spawnObstacle(Vec3(5, 5, 0));
+	/*spawnObstacle(Vec3(5, 5, 0));
 	spawnObstacle(Vec3(15, 5, 0));
 	spawnObstacle(Vec3(25, 5, 0));
-	spawnObstacle(Vec3(35, 5, 0));
+	spawnObstacle(Vec3(35, 5, 0));*/
 }
 
 

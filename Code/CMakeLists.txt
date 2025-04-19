@@ -35,6 +35,12 @@ add_sources("Components_uber.cpp"
 		"Components/TriggerRoad.cpp"
 )
 
+add_sources("Utils_uber.cpp"
+    PROJECTS Game
+    SOURCE_GROUP "Utils"
+		"Utils/DebugDraw.h"
+)
+
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/CVarOverrides.h")
     add_sources("NoUberFile"
         PROJECTS Game

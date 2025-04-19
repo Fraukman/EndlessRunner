@@ -33,6 +33,7 @@ protected:
 
 	void updatePlayerPos(float frametime);
 	void handleLateralMoviment(float frametime);
+	void updateScore();
 
 private:
 	Cry::DefaultComponents::CCharacterControllerComponent* m_pCharacterControllerComponent;
@@ -40,6 +41,9 @@ private:
 
 	float m_movementSpeed = 10;
 	float m_startXPos = 0.0f;
+	float m_startYPos = 0.0f;
+	float m_distanceTraveled = 0.0f;
+	float m_speedBump = 0.5f;
 	bool m_lateralMoving = false;
 	Vec2 m_movementDelta = ZERO;
 	Vec3 m_velocity = ZERO;

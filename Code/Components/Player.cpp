@@ -7,6 +7,8 @@
 #include <CrySchematyc/Env/Elements/EnvComponent.h>
 #include <CryCore/StaticInstanceList.h>
 #include <CryNetwork/Rmi.h>
+#include "Utils/DebugDraw.h"
+#include <algorithm>
 
 namespace
 {
@@ -45,20 +47,26 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 	case Cry::Entity::EEvent::GameplayStarted:
 	{
 		m_startXPos = m_pEntity->GetWorldPos().x;
+		m_startYPos = m_pEntity->GetWorldPos().y;
 	}
 	break;
 	case Cry::Entity::EEvent::Update:
 	{
 		updatePlayerPos(frameTime);
+		updateScore();
+
+		float yVel = m_pCharacterControllerComponent->GetVelocity().y;
+		DebugDraw::DrawDebugText(std::to_string(yVel).c_str(), 20, 35, 2, true);
 	}
 	break;
 	case Cry::Entity::EEvent::Reset:
 	{
 		m_movementDelta = ZERO;
-		m_startXPos = 0.0f;
+		m_startXPos = ZERO;
+		m_startYPos = ZERO;
 		m_startPos = ZERO;
 		m_movementStep = ZERO;
-
+		m_distanceTraveled = ZERO;
 	}
 	break;	
 	}
@@ -76,11 +84,16 @@ void CPlayerComponent::updatePlayerPos(float frametime)
 	if(m_pCharacterControllerComponent->IsOnGround()){
 		m_movementDelta.y = 1.0f;
 	}
-	Vec3 normalizedVel = m_movementDelta.Normalize() * m_movementSpeed;
+
+	float accVel = m_movementSpeed + m_speedBump;
+	accVel = std::clamp(accVel, 0.0f, 300.0f);
+
+	Vec3 normalizedVel = m_movementDelta.Normalize() * (accVel);
 	m_pCharacterControllerComponent->AddVelocity(normalizedVel * frametime);
 
 
 	m_movementDelta = ZERO;
+	m_speedBump += 0.5f;
 }
 
 
@@ -102,6 +115,13 @@ void CPlayerComponent::handleLateralMoviment(float frametime)
 		m_lateralMoving = false;
 	}
 	
+}
+
+void CPlayerComponent::updateScore()
+{
+	m_distanceTraveled = m_pEntity->GetWorldPos().y - m_startYPos;
+	std::string score = std::to_string(m_distanceTraveled) + "m";
+	DebugDraw::DrawDebugText(score.c_str(), 20, 20, 2, true);
 }
 
 void CPlayerComponent::HandleInput()
