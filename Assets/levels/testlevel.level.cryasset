@@ -1,4 +1,4 @@
-<AssetMetadata version="0" type="Level" guid="fa3938fe-600d-53da-fa6b-bbe3e6745520" source="" timestamp="1744767110">
+<AssetMetadata version="0" type="Level" guid="fa3938fe-600d-53da-fa6b-bbe3e6745520" source="" timestamp="1745020140">
  <Files>
   <File path="testlevel/testlevel.level"/>
  </Files>
@@ -27,6 +27,9 @@
   <Path>blueprints/materials/green.mtl</Path>
   <Path>blueprints/materials/red.mtl</Path>
   <Path>blueprints/materials/yellow.mtl</Path>
+  <Path>meshes/obstacles/suzanne.cgf</Path>
+  <Path>meshes/obstacles/suzanne.mtl</Path>
+  <Path>objects/sphere.cgf</Path>
   <Path>scripts/ai/factions.xml</Path>
  </Dependencies>
 </AssetMetadata>

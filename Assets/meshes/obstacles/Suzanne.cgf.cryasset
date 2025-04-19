@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="a7760440-9603-bfa8-9eb6-c6d7a19df1e1" source="Suzanne.fbx">
+ <Files>
+  <File path="Suzanne.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">2</Detail>
+  <Detail name="triangleCount">968</Detail>
+  <Detail name="vertexCount">1968</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./Suzanne.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

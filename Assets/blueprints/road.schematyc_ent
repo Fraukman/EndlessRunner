@@ -216,6 +216,19 @@
     <extensions />
     <children />
    </element>
+   <element elementType="ComponentInstance" guid="43203231-614d-473d-9a8e-751f8db10d64" name="CObstaclesManagerComponent" Schematyc::EMPEnv="clientserver" accessor="Private" typeGUID="e019950b-544c-4612-99c2-aa63e2ab1d7b">
+    <properties>
+     <meshname>
+      <element element="meshes/obstacles/Suzanne.cgf"/>
+      <element element="objects/sphere.cgf"/>
+      <element element="%engine%/engineassets/objects/primitive_box.cgf"/>
+      <element element="%engine%/engineassets/objects/primitive_cylinder.cgf"/>
+      <element element="%engine%/engineassets/objects/primitive_pyramid.cgf"/>
+     </meshname>
+    </properties>
+    <extensions />
+    <children />
+   </element>
   </children>
  </root>
 </CrySchematyc>

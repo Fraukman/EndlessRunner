@@ -29,6 +29,8 @@ add_sources("Components_uber.cpp"
 		"Components/Player.h"
 		"Components/RoadManager.h"
 		"Components/RoadManager.cpp"
+		"Components/ObstaclesManager.h"
+		"Components/ObstaclesManager.cpp"
 		"Components/TriggerRoad.h"
 		"Components/TriggerRoad.cpp"
 )
